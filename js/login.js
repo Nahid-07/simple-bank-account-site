@@ -6,7 +6,7 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     if(email === 'nahid@asif.com' && password === 'iloveyou'){
         window.location.href='bank.html';
     }else{
-        alert('invalid user')
+        alert('তুই কিডারে???');
     }
     
 });
