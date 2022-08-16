@@ -19,7 +19,7 @@
             <div class="grid grid-cols-3 gap-4 text-white w-9/12 mx-auto">
                 <div class="bg-green-400 p-8 rounded-xl">
                     <h3 class="text-2xl">Deposit</h3>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-violet-400 p-8 rounded-xl">
                     <h3 class="text-2xl">Withdraw</h3>
@@ -32,22 +32,23 @@
             </div>
         </section>
         <section class="mt-12">
-            <div class="grid grid-cols-2 gap-4 text-white w-9/12 mx-auto">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
                 <div class="bg-pink-500 p-8 rounded-xl">
-                    <h3 class="text-2xl mb-4">Deposit</h3>
+                    <h3 class="text-2xl mb-4 text-white">Deposit</h3>
                     <input id="deposit-field" class="w-9/12 block mb-5 p-2 rounded" type="text" placeholder="enter ammount">
-                    <button type="submit"
-                        class="bg-blue-600 px-20 py-2 rounded-lg text-white text-2xl hover:bg-sky-700">Deposit</button>
+                    <button type="submit" id="btn-deposit"
+                        class="bg-blue-600 px-20 py-2 rounded-lg text-white text-2xl hover:bg-sky-700 text-white">Deposit</button>
                 </div>
                 <div class="bg-rose-500 p-8 rounded-xl">
-                    <h3 class="text-2xl mb-4">Withdraw</h3>
+                    <h3 class="text-2xl mb-4 text-white">Withdraw</h3>
                     <input id="withdraw-field" class="w-9/12 block mb-5 p-2 rounded" type="text" placeholder="enter ammount">
                     <button type="submit"
-                        class="bg-blue-600 px-20 py-2 rounded-lg text-white text-2xl hover:bg-sky-700">Withdraw</button>
+                        class="bg-blue-600 px-20 py-2 rounded-lg text-white text-2xl hover:bg-sky-700 text-white">Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/deposit.js"></script>
 </body>
 
 </html>
